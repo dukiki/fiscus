@@ -8,6 +8,7 @@ gem 'pg', '~> 0.18' # database for Active Record
 gem 'puma' # the app server
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
+gem 'slim'
 gem 'turbolinks' # makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'uglifier', '>= 1.3.0' # compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0' # .coffee assets and views
@@ -25,6 +26,9 @@ gem 'jquery-rails' # JavaScript library
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+    gem lib, :git => "https://github.com/rspec/#{lib}.git", branch: 'master'
+  end
 end
 
 group :development do
