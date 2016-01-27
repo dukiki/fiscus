@@ -8,6 +8,8 @@ gem 'pg', '~> 0.18' # database for Active Record
 gem 'puma' # the app server
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
+gem 'sass-rails', github: 'rails/sass-rails'
+gem 'sprockets', github: 'rails/sprockets'
 gem 'slim'
 gem 'turbolinks' # makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'uglifier', '>= 1.3.0' # compressor for JavaScript assets
