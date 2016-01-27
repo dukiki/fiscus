@@ -23,10 +23,11 @@ module FiscusOpen
     # -- all .rb files in that directory are automatically loaded.
     config.generators do |g|
       g.orm             :active_record
-      g.template_engine :slim
-      g.test_framework  :rspec, fixture: false
+      g.template_engine false
+      g.test_framework  false
       g.stylesheets     false
       g.javascripts     false
+      g.helper          false
     end
   end
 end
