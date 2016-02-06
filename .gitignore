@@ -8,6 +8,7 @@
 /.bundle
 .DS_Store
 config/database.yml
+config/secrets.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -17,3 +18,5 @@ config/database.yml
 
 # Ignore Byebug command history file.
 .byebug_history
+
+bin/
