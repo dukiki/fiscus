@@ -7,7 +7,7 @@ set :deploy_to, '/home/deployer/apps/fiscus-open'
 
 # rbenv configuration
 set :rbenv_type, :user # or :system
-set :rbenv_ruby, File.read('.ruby-version').strip
+set :rbenv_ruby, File.read(File.join(File.expand_path('../../', __FILE__), '.ruby-version')).strip
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
