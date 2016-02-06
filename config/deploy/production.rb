@@ -7,7 +7,9 @@ server '188.166.16.167', user: 'deployer', roles: %w{app db web}#, my_property: 
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-
+set :branch, 'master'
+set :rails_env, 'production'
+set :keep_releases, 3
 
 # role-based syntax
 # ==================
