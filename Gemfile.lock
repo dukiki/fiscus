@@ -78,7 +78,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-core.git
-  revision: e9b99468cbfa45d2c0f38e69a0c9c9184814e327
+  revision: 00a82883e26fa7f7251e24912b58ab6ec7b5ad95
   branch: master
   specs:
     rspec-core (3.5.0.pre)
@@ -86,7 +86,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-expectations.git
-  revision: f7b5f1d52484a858eba27c2d6c40794df325d0d0
+  revision: 4c1258fc65e494a9b5884dac0d5174b3a90883cf
   branch: master
   specs:
     rspec-expectations (3.5.0.pre)
@@ -95,7 +95,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-mocks.git
-  revision: 993fcf286ac0e5b23f209c8183fa8f2209347d12
+  revision: b3b698859503d77390c6cf21c26b0a1adb8f2bd3
   branch: master
   specs:
     rspec-mocks (3.5.0.pre)
@@ -104,7 +104,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-rails.git
-  revision: 74131b25e9d0a68e39ee5bf5b0ad08c2fd8a444b
+  revision: 8117cbdb3af83e2d95ba7736da097a0140fbd8a0
   branch: master
   specs:
     rspec-rails (3.5.0.pre)
@@ -118,7 +118,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-support.git
-  revision: 4b938ec512d2fbee945913afbb957b510244ecb3
+  revision: 3c86358e132970c96d31e9f6c3aea508b9b4e094
   branch: master
   specs:
     rspec-support (3.5.0.pre)
@@ -136,6 +136,8 @@ GEM
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    capistrano-passenger (0.2.0)
+      capistrano (~> 3.0)
     capistrano-rails (1.1.6)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
@@ -233,6 +235,7 @@ DEPENDENCIES
   byebug
   capistrano (~> 3.4)
   capistrano-bundler (~> 1.1.2)
+  capistrano-passenger
   capistrano-rails (~> 1.1)
   capistrano-rbenv (~> 2.0)
   coffee-rails (~> 4.1.0)
