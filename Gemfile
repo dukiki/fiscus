@@ -7,6 +7,7 @@ gem 'rails', github: 'rails/rails'
 gem 'pg', '~> 0.18' # database for Active Record
 gem 'puma' # the app server
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
+gem 'warden'
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 gem 'sass-rails', github: 'rails/sass-rails'
