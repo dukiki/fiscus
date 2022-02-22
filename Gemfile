@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead:
 gem 'rails', github: 'rails/rails'
 gem 'pg', '~> 0.18' # database for Active Record
-gem 'puma' # the app server
+gem 'puma' , '>= 4.3.11' # the app server
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 gem 'warden'
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -13,10 +13,10 @@ gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.
 gem 'sass-rails', github: 'rails/sass-rails'
 gem 'sprockets', github: 'rails/sprockets'
 gem 'slim'
-gem 'turbolinks' # makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks' , '>= 2.5.3' # makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'uglifier', '>= 1.3.0' # compressor for JavaScript assets
-gem 'coffee-rails', '~> 4.1.0' # .coffee assets and views
-gem 'jquery-rails' # JavaScript library
+gem 'coffee-rails', '~> 4.2.2' # .coffee assets and views
+gem 'jquery-rails' , '>= 4.1.0' # JavaScript library
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -35,7 +35,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 3.0'
+  gem 'web-console', '~> 3.1', '>= 3.1.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   # Capistrano
